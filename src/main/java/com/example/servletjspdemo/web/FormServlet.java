@@ -21,13 +21,25 @@ public class FormServlet extends HttpServlet {
 		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter();
-		out.println("<html><body><h2>Simple form servlet</h2>" +
+		out.println("<html><body><h2>Latwy formularz</h2>" +
 				"<form action='data'>" +
-				"First name: <input type='text' name='firstName' /> <br />" +
+				"Imie: <input type='text' name='imie' /> <br />" +
+				"Nazwisko: <input type='text' name='nazwisko' /> <br />" +
 				"<input type='checkbox' name='hobby' value='bicycle'>I like riding a bicycle<br />" +
 				"<input type='checkbox' name='hobby' value='tv'>I like watching TV<br />" +
 				"<input type='checkbox' name='hobby' value='beer'>I like dringking beer<br />" +
 				"<input type='checkbox' name='hobby' value='books'>I like reading books<br />" +
+				"<div><br>"+
+				"<input type='radio' name='jedzenie' value='Hamburger'> Hamburger<br> " +
+				"<input type='radio' name='jedzenie' value='Pizza' checked> Pizza<br>" +
+				"<input type='radio' name='jedzenie' value='Kebab'> Kebab"+
+				"</div>" +
+				"<select multiple='multiple' name='cars'>" +
+				"<option value='volvo'>Volvo</option>"+
+				"<option value='saab'>Saab</option>"+
+				"<option value='opel'>Opel</option>"+
+				"<option value='audi'>Audi</option>"+
+				"</select>" +
 				"<input type='submit' value=' OK ' />" +
 				"</form>" +
 				"</body></html>");

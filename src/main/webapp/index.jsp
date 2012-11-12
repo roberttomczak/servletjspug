@@ -8,9 +8,12 @@
         <title>Demo application</title>
     </head>
     <body>
-        <h2>Simple demo application with Java EE 6 Servlet (3.0) and JSP</h2>
-        <p><a href="hello">See greetings from servlet</a></p>
-        <p><a href="form">Fill a form</a></p>
+        <h2>Prosta aplikacja JEE</h2>
+        <p><a href="info">Informacje o mnie</a></p>
+        <p><a href="form">Wypełnij formularz</a></p>
+        <p><a href="session3">Sesje i ServletContext</a></p>
+        <p><a href="wypform.jsp">Formularz jsp</a></p>
         <p><a href="getPersonData.jsp">Fill a Person form</a></p>
+        <p><a href="formbean.jsp">Formularz z beansami</a></p>
     </body>
 </html>
